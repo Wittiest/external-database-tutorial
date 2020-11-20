@@ -1,0 +1,29 @@
+{
+  "name": "external-database-tutorial",
+  "description": "Tutorial on using an external database with Roblox to allow for communication outside of a Game",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Wittiest",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wittiest/external-database-tutorial"
+  },
+  "engines": {
+    "node": "12.x.x"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "system-test": "mocha --exit test/*.test.js",
+    "test": "npm run system-test"
+  },
+  "dependencies": {
+    "@google-cloud/datastore": "^6.0.0",
+    "@google-cloud/secret-manager": "^3.2.2",
+    "express": "^4.16.4",
+    "gstore-node": "^7.2.5"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.0",
+    "supertest": "^6.0.0"
+  }
+}
